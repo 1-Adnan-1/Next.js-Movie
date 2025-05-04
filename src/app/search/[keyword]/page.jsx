@@ -4,9 +4,12 @@ import React from "react";
 const Page = async ({ params }) => {
   const keyword = params.keyword;
 
+  const apiKey = process.env.TMDB_API_KEY;
+
   const res = await fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=79f1d2c8e3e13651e9d43c6ab93bbaf7&query=${keyword}&language=en-US&include_adult=false`
+    `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${keyword}&language=en-US&include_adult=false`
   );
+
   const data = await res.json();
 
   return (
