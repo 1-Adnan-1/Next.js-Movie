@@ -21,7 +21,7 @@ Projeyi çalıştırmak için şu adımları izleyin:
 
 ```bash
 # Repoyu klonlayın
-git clone https://github.com/kullaniciAdi/movie-app.git
+git clone https://github.com/1-Adnan-1/Next.js-Movie
 cd movie-app
 
 # Bağımlılıkları yükleyin
